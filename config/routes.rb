@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   # add new review to a restaurant (GET "restaurants/38/reviews/new")
   # POST "restaurants/38/reviews"
   resources :restaurants, only: [:show] do
-    resources :reviews, only: [ :new, :create ]
+    resources :reviews, only: [:create]
   end
 end
